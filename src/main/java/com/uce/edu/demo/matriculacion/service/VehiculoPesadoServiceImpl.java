@@ -44,14 +44,7 @@ public class VehiculoPesadoServiceImpl implements IVehiculoService{
 	public BigDecimal calcularValor(BigDecimal precio) {
 		// TODO Auto-generated method stub
 		BigDecimal valorMatricula = precio.multiply(new BigDecimal(0.14));
-		BigDecimal descuento = new BigDecimal(7).divide(new BigDecimal(100));
-		
-		if(valorMatricula.compareTo(new BigDecimal(2000))==1) {
 			
-			
-			valorMatricula = valorMatricula.subtract(valorMatricula.multiply(descuento));
-		}
-
 		return valorMatricula;
 	}
 

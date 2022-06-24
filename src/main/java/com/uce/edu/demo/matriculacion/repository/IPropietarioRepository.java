@@ -9,4 +9,6 @@ public interface IPropietarioRepository {
 	public void borrar(String cedula);
 	
 	public void actualizar(Propietario p);
+	
+	public Propietario buscar(String cedula);
 }

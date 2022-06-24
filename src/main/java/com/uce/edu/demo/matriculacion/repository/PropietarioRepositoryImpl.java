@@ -26,4 +26,15 @@ public class PropietarioRepositoryImpl implements IPropietarioRepository{
 		System.out.println("Se ha actualizado el propietario de la base: " + p);
 	}
 
+	@Override
+	public Propietario buscar(String cedula) {
+		// TODO Auto-generated method stub
+		//System.out.println("Se ha buscado en la base el propietario: " + cedula);
+		Propietario p = new Propietario();
+		p.setCedula(cedula);
+		p.setApellido("Ramirez");
+		p.setNombre("Alexander");
+		return p;
+	}
+
 }

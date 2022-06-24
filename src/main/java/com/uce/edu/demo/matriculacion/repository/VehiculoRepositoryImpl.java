@@ -18,10 +18,12 @@ public class VehiculoRepositoryImpl implements IVehiculoRepository{
 	@Override
 	public Vehiculo buscar(String placa) {
 		// TODO Auto-generated method stub
-		System.out.println("Se ha buscado en la base el  vehiculo liviano por placa: " + placa);
+		//System.out.println("Se ha buscado en la base el  vehiculo liviano por placa: " + placa);
 		Vehiculo v = new Vehiculo();
+		v.setPlaca("1235");
+		v.setMarca("toyota");
+		v.setModelo("cross");
 		v.setPrecio(new BigDecimal(2500));
-		v.setPlaca(placa);
 		v.setTipo("L");
 		return v;
 	}
